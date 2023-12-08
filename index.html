@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Office with Three.js</title>
-</head>
-<body>
-    <div id="scene-container"></div>
+<html>
+  <head>
+    <title>glTF Model - A-Frame School</title>
+    <meta name="description" content="glTF Model - A-Frame School" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-    <!-- Include Three.js and GLTFLoader from CDN -->
-    <script src="https://threejs.org/build/three.module.js"></script>
-    <script src="https://threejs.org/examples/jsm/loaders/GLTFLoader.js"></script>
-
-    <!-- Module script for your main code -->
-    <script type="module" src="path/to/main.js"></script>
-</body>
+      <a-entity
+        gltf-model="simple_office_table/scene.gltf"
+        position="0 0 -5"
+        scale="1 1 1"
+      ></a-entity>
+      
+    </a-scene>
+  </body>
 </html>
