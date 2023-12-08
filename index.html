@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,9 +11,15 @@
       
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-      <!-- Include the table_2inject.html file -->
-      <a-entity aframe-inject="src: table_2inject.html"></a-entity>
+      <!-- Load external content using a-assets -->
+      <a-assets>
+        <a-asset-item id="tableContent" src="table_2inject.html"></a-asset-item>
+      </a-assets>
+
+      <!-- Include the external content -->
+      <a-entity template="src: #tableContent;"></a-entity>
       
     </a-scene>
   </body>
 </html>
+
