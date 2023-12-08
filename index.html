@@ -10,11 +10,8 @@
       
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-      <a-entity
-        gltf-model="simple_office_table/scene.gltf"
-        position="0 0 -5"
-        scale="1 1 1"
-      ></a-entity>
+      <!-- Include the table.html file -->
+      <a-entity aframe-inject="src: table_2inject.html"></a-entity>
       
     </a-scene>
   </body>
